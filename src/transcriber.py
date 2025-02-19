@@ -18,7 +18,7 @@ def get_ffmpeg_path():
     ffmpeg_path = shutil.which('ffmpeg')
     if not ffmpeg_path:
         # Default Windows installation path for winget
-        ffmpeg_path = r"E:\kalvium\dec_sprint\knet_mock\ffmpeg-2024-11-28-git-bc991ca048-essentials_build\bin\ffmpeg.exe"
+        ffmpeg_path = os.getenv('FFMPEG_PATH')  # Check environment variable first
     return ffmpeg_path
 
 def download_video_audio(video_url: str, output_path: Path) -> Path:
