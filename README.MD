@@ -1,7 +1,5 @@
 # Scribly
 
-Below is a sample README in Markdown format that you can use for your project:
-
 ---
 
 # YouTube Video Content Repurposer
@@ -55,7 +53,7 @@ A command-line tool to transcribe YouTube videos and automatically repurpose the
 
     *to add it in your env variable run*
     ```
-    export FFMPEG_PATH=/path/to/
+    export FFMPEG_PATH=/path/to/ffmpeg
     ```
 ## Usage
 
